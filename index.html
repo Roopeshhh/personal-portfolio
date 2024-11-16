@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/6e3bc4a3e9.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+
+                <ul id="sideMenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-rectangle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer</p>
+
+                <h1>Hi, I'm <span>Roopesh</span> <!-- <br>From India --></h1>
+            </div>
+        </div>
+    </div>
+    <!-- about -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hi! I'm a passionate web developer skilled in HTML, CSS, JavaScript, and React. I enjoy creating
+                        dynamic and
+                        user-friendly applications that merge functionality with design. Whether building responsive
+                        websites or tackling
+                        complex front-end challenges, I love turning ideas into reality through code.</p>
+                    <div class="tab-titles">
+
+                        <p class="tab-links active-link" onclick="opentab('skills')">skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">experience</p>
+                        <p class="tab-links" onclick="opentab('education')">education</p>
+
+                    </div>
+                    <div id="skills" class="tab-contents active-tab">
+                        <ul>
+                            <li><span>Frontend Development</span><br>Expertise in building responsive, mobile-first
+                                websites with modern designs.</li>
+                            <li><span>React Development</span><br>Proficient in creating reusable components and
+                                managing state for dynamic applications.</li>
+                            <li><span>Problem-Solving</span><br>Skilled in debugging and optimizing web applications for
+                                performance.</li>
+                        </ul>
+                    </div>
+                    <div id="experience" class="tab-contents">
+                        <ul>
+                            <li><span>Portfolio Website</span><br>Designed a personal portfolio to showcase projects,
+                                incorporating interactive components and responsive design.</li>
+                            <li><span>To-Do List App</span><br>Built a task management tool with filtering, sorting, and
+                                LocalStorage features for persistence.</li>
+                            <li><span>Quiz App</span><br>Developed a dynamic quiz application with features like timer,
+                                score tracking, and real-time feedback.</li>
+                        </ul>
+                    </div>
+                    <div id="education" class="tab-contents">
+                        <ul>
+                            <li><span>SSLC</span><br>Deeksha English High School,Kadur <br>Aggregate:68%</li>
+                            <li><span>PUC</span><br>RP Residential PU College,Kadur <br> Aggregate:77%</li>
+                            <li><span>B.E</span><br>Adhichunchanagiri Institute of Technology,Chikkamagaluru.
+                                <br>Compuer
+                                Science(2020-2024) <br> Aggregate: 7.35CGPA
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- --------------------Services---------------------- -->
+    <div id="services">
+        <div class="container">
+
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>I create visually appealing and responsive websites tailored to your needs. From simple landing
+                        pages to complex web
+                        applications, I ensure a seamless user experience with optimized performance and accessibility.
+                    </p>
+                    <a href="#">Lern more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>Frontend Development</h2>
+                    <p>I specialize in creating modern, interactive, and high-performing user interfaces using the
+                        latest technologies. My goal
+                        is to deliver sleek designs that are both functional and visually appealing.</p>
+                    <a href="#">Lern more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>React Development</h2>
+                    <p>Specializing in React, I build dynamic, fast-loading, and scalable web applications. Whether you
+                        need single-page apps
+                        or complex component-based systems, I deliver solutions that meet your goals.</p>
+                    <a href="#">Lern more</a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- -------------my work--------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/w1.png">
+                    <div class="layer">
+                        <h3>Portfolio Website</h3>
+                        <p>A personal portfolio website designed to showcase my projects and skills.</p>
+                        <a href="#" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/w2.png" height="520px">
+                    <div class="layer">
+                        <h3>Times of India Clone</h3>
+                        <p>The Times of India application similar to the original application </p>
+                        <a href="https://github.com/Roopeshhh/Times_of_India" target="_blank"><i
+                                class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/w3.png">
+                    <div class="layer">
+                        <h3>Shopping Application</h3>
+                        <p>The shopping application with responsive designs for all devices.</p>
+                        <a href="https://github.com/Roopeshhh/Project-2" target="_blank"><i
+                                class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/Roopeshhh?tab=repositories" target="_blank" class="btn">See more</a>
+
+        </div>
+
+    </div>
+    <!-- ------------contact------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>contact@roopesh.com</p>
+                    <p><i class="fa-solid fa-phone-volume"></i>8618925164</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+                    </div>
+                    <a href="images/ROOPESH-BY-CV.pdf" download class="btn btn2">Download CV</a>
+
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">submit</button>
+                    </form>
+                    <span id="msg"></span>
+
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>copyright © Roopesh.</p>
+        </div>
+    </div>
+
+
+
+
+
+    <script>
+        // about section
+        var tabLinks = document.getElementsByClassName("tab-links");
+        var tabContents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tabLink of tabLinks) {
+                tabLink.classList.remove("active-link");
+            }
+            for (tabContent of tabContents) {
+                tabContent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+
+        }
+
+
+
+
+    </script>
+    <script>
+        /* side bar */
+        var sidemenu = document.getElementById("sideMenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+
+
+    <script>
+        /* contact form */
+        // const msg = document.getElementById('msg');
+
+
+    </script>
+</body>
+
+
+</html>
